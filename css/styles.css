@@ -16,6 +16,20 @@
   }
 }
 
+@keyframes moveBubble {
+  0% {
+    opacity: 0.6;
+    transform: translate(-110vw, -10vh);
+  }
+  80% {
+    opacity: 1;
+    transform: translate(80vw, 90vh);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -34,4 +48,18 @@
   top: 30%;
   right: 8px;
   animation: moveInRight 4s ease-out;
+}
+
+.bubble {
+  position: absolute;
+  right: 8px;
+  width: 40px;
+  animation: moveBubble 10s ease-out;
+}
+
+.bubble2 {
+  position: absolute;
+  right: 50px;
+  width: 80px;
+  animation: moveBubble 14s ease-out;
 }
